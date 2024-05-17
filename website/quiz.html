@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <title>LearnEd</title>
+    <meta name="desciption" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html">
+                <div class="logo"><img src="images/icon/logo.jpg" alt="logo"></div>
+            </a>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+
+
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+            </ul>
+            <div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+                    src="images/icon/search.svg" alt="search" onclick=slide()></div>
+            <a class="get-started" href="login.html">Get Started</a>
+            <!-- <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"> -->
+        </nav>
+    </div>
+    <div class="written">
+        <p class="upar">Daily quiz on LearnEd</p>
+        <p class="neeche">If you think education is expensive, try ignorance.</p>
+        <div class="start">Start</div>
+    </div>
+</body>
+</html>

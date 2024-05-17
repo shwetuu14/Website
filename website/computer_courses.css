@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 90vh;
+  /* background: #000; */
+}
+.black {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.logo img{
+  cursor: pointer;
+
+}
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  justify-content: space-around;
+  transition: 1.5s;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 5px 10px;
+}
+nav ul li a {
+  padding: 2px 10px;
+  color: #2e2e2e;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+  border-radius: 5px;
+  background: #df2771;
+}
+.active {
+  color: #fff;
+  border-radius: 5px;
+  background: #df2771;
+}
+.srch {
+  padding: 2px 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background: #0066ff; */
+  border: 1px solid;
+  border-radius: 20px;
+}
+.srch img {
+  width: 17px;
+  cursor: pointer;
+}
+.srch .search {
+  /* padding: 2px 10px; */
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.get-started {
+  margin-left: 50px;
+  padding: 5px 20px;
+  border: 2px solid #df2771;
+  border-radius: 20px;
+  text-decoration: none;
+
+  transition: 0.5s;
+  background-color: #df2771;
+  color: #fff;
+}
+.get-started:hover {
+  color: #2e2e2e;
+  background: #fff;
+}
+.coures{
+  /* border: 2px red solid; */
+  height: 600px;
+  margin-top: 100px;
+}
+.accelerate{
+  /* margin-top: 100px; */
+  color: #606060;
+  font-size: 30px;
+  margin-left: 167px;
+}
+.dabbe{
+  display: grid;
+  grid-template-columns: repeat(3,320px);
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  margin-top: 40px;
+}
+.python{
+  height: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+.js{
+  background-image: url(img/js3.jpeg);
+  background-position-y: 10px;
+  background-size:contain;
+}
+.py{
+  background-image: url(img/python.jpg);
+  background-position-y: 20px;
+  background-size:contain;
+}
+.cpp{
+  background-image: url(img/cpp2.png);
+  background-position-x: -40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wd{
+  background-image: url(img/wd.jpeg);
+  background-position-x: -40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ds{
+  background-image: url(img/ds.jpeg);
+  background-position-x: -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.algo{
+  background-image: url(img/algorithms.png);
+  background-position-x: -40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.likh{
+  background: #df2771;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+/* js course */
+.js-course{
+  height: 100vh;
+  margin-top: 100px;
+}
+.chalu{
+  color: #606060;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 150px;
+}
+.band{
+  margin-left: 150px;
+  color: #606060;
+  font-size: 17px;
+}
+.js-dabbe{
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(4,280px);
+  justify-items: end;justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+.js-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/js3.jpeg);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.python-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/python.jpg);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.cpp-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/cpp2.png);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.webdev-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/wd.jpeg);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.ds-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/ds.jpeg);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.algo-boxes{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  height: 165px;
+  width: 280px;
+  background-image: url(img/algorithms.png);
+  background-position-y: 10px;
+  background-size:contain;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+}
+.js-back{
+  /* border: 2px solid red; */
+  height: 100%;
+  background-color: #df2771;
+  border-top-right-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+.js-back p{
+  padding-top: 3px;
+  padding-right: 10px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* Projects */
+.projects{
+  height: 80vh;
+  margin-top: 100px;
+}
+.up{
+  color: #606060;
+  font-size: 30px;
+  margin-left: 167px;
+  margin-top: 20px;
+}
+.down{
+  color: #606060;
+  font-size: 15px;
+  margin-left: 167px;
+}
+.projects-dabbe{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pro-box{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  height: 235px;
+  width: 193px;
+  position: relative;
+}
+.proj1{
+  background-image: url(projects/proj1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.proj2{
+  background-image: url(projects/proj2.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.proj3{
+  background-image: url(projects/proj3.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.proj4{
+  background-image: url(projects/proj4.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.proj5{
+  background-image: url(projects/proj5.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pro-desc{
+  background: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+.pro-desc :nth-child(1){
+  color: #606060;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pro-desc :nth-child(2){
+  color: #606060;
+  font-size: 13px;
+}
+.title2 {
+  position: relative;
+  /* margin-top: 150px; */
+  margin-left: 100px;
+}
+.title2 span {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #2e3d49;
+}
+.title2 .shortdesc2 {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #2e3d49;
+  margin-bottom: 10px;
+}
+.feedbox {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("images/extra/b4.jpg");
+  background-size: cover;
+  padding: 50px 80px;
+  background-attachment: fixed;
+}
+.feed {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6), 0 0 80px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+}
+.feed form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.feed form label {
+  position: absolute;
+  color: #f2f2f2;
+  font-size: 10px;
+  font-weight: 800;
+}
+.feed form input,
+.feed textarea {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px lightgray;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: #2e3d49;
+  background: #fff9;
+  font-weight: 600;
+}
+.feed form input {
+  margin-bottom: 15px;
+  width: 50%;
+}
+.feed form .fname {
+  width: 25%;
+}
+.feed form textarea {
+  width: 100%;
+  height: 100px;
+}
+.feed #csubmit {
+  margin-top: 25px;
+  background: linear-gradient(to right, #fa4b37, #df2771);
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
